@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;	
 	background-color: $dark-color;
+	text-align: center;
 }
 
 h1 {
@@ -37,6 +38,14 @@ p {
 	line-height: 23px;
 }
 
+
+.subheading {
+	margin-bottom: 70px;
+	font-family: $subheading-font-family;
+	font-type: italic;
+	font-size: 16px;
+}
+
 .header-section {
 	height: 700px;
 	background-image: url('../images/header-background.jpg');
@@ -48,6 +57,7 @@ p {
  	.navbar {
  		margin: 0 auto;
 		min-height: 65px;
+		font-family: $heading-font-family;
 
 		.box {
 			width: 100%;
@@ -134,20 +144,12 @@ p {
 }
 
 .section--services {
-	padding: 100px 0;
+	padding: 100px 0 80px 0;
 	background-color: $background-color;
-	text-align: center;
 
-	.header {
-		p {
-			margin-bottom: 40px;
-			font-family: $subheading-font-family;
-			font-type: italic;
-			font-size: 16px;
-		}
-	}
+	.services-item {
+		margin-bottom: 30px;
 
-	.item {
 		.icon-container {
 			display: flex;
 			justify-content: center;
@@ -162,7 +164,6 @@ p {
 				align-items: center;
 				height: 76px;
 				width: 76px;
-				margin-top: 30px;
 				margin-bottom: 13px;
 				padding: 10px;
 				border: 3px solid $yellow-color;
@@ -176,11 +177,65 @@ p {
 					color: white;
 				}
 			}
-		}
-
-		
+		}		
 	}
+}
 
+.section--portfolio {
+	padding: 100px 0;
+	background-color: $light-gray-color;
+
+	.item-container {
+		background-color: white;	
+
+		a {
+			text-decoration: none;
+
+				.photo-container {
+					overflow: hidden;
+					height: 21vw;
+					object-fit: cover;
+
+					@media (max-width: 600px) {
+						height: 28vw;
+					}					
+
+					@media (min-width: 601px) {
+						height: 32vw;
+					}
+
+					@media (min-width: 992px) {
+						height: 21vw;
+					}					
+
+					img {
+					width: 100%;				
+					opacity: 1;					
+					transition: all .3s;
+
+					&:hover, &:active {
+						opacity: .7;
+						width: 120%;						
+						margin: -10%;
+					}
+				}
+			}
+		}		
+
+		.caption {
+			padding: 17px;
+			padding-bottom: 22px;
+			margin-bottom: 50px;
+
+			h5 {
+				margin-bottom: 0;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 @media (min-width: 1036px) {

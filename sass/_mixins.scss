@@ -8,6 +8,13 @@
 			min-height: 1px;
 			/*text-align: center;*/
 			position: relative;
+			@if $i != 1 {
+				padding-left: 17px;
+			}
+			
+			@if $i != 12 {
+				padding-right: 17px;
+			}			
 		}
 	}
 }
