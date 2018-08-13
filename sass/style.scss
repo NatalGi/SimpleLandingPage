@@ -538,6 +538,36 @@ button {
 	}
 }
 
+.section--logos {
+	padding: 70px 0;
+	background-color: white;
+
+	.flex-row {
+		align-content: center;
+		justify-content: center;
+
+	}
+
+	.logo-item {
+		display: flex;
+		justify-content: center;
+		padding: 15px 30px;
+
+	}
+
+	img {
+		//padding: 15px 30px;
+		object-fit: contain;
+		width: 100%;
+	}
+
+	@media (max-width: 767px) {
+		img {
+			width: 120px;
+		}
+	}
+}
+
 
 .bg {
 	background-color: gray;

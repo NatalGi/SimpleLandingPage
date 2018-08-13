@@ -1218,6 +1218,38 @@ button:hover, button:active {
   }
 }
 
+.section--logos {
+  padding: 70px 0;
+  background-color: white;
+}
+
+.section--logos .flex-row {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.section--logos .logo-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 15px 30px;
+}
+
+.section--logos img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .section--logos img {
+    width: 120px;
+  }
+}
+
 .bg {
   background-color: gray;
 }
