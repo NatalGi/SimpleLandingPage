@@ -1250,6 +1250,102 @@ button:hover, button:active {
   }
 }
 
+.section--contact {
+  padding-bottom: 110px;
+  background-color: #222222;
+  background-image: url("/images/map.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 740px) {
+  .section--contact {
+    padding-bottom: 70px;
+  }
+}
+
+.section--contact h3 {
+  color: white;
+}
+
+.section--contact input, .section--contact textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 29px;
+}
+
+.section--contact input {
+  height: 52px;
+  padding: 0 20px;
+}
+
+.section--contact input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 214px;
+  max-height: 214px;
+  overflow: auto;
+  padding: 20px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.section--contact textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section--contact textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #bbbbbb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .bg {
   background-color: gray;
 }
