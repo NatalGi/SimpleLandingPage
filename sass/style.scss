@@ -1,6 +1,13 @@
 @import "variables";
 @import "mixins";
 @import "layout";
+@import "icons";
+/*@import "../vendor/sass/buttons";
+@import "../vendor/sass/dropdown";
+@import "../vendor/sass/forms";
+@import "../vendor/sass/navbar";
+@import "../vendor/sass/nav";
+@import "../vendor/sass/utilities";*/
 
 body {
 	margin: 0;
@@ -15,20 +22,43 @@ h1 {
 	font-size: 73px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@media (max-width: 740px) {
+		font-size: 50px;
+	}
 }
 
 h3 {
+	margin-top: 0;
+	margin-bottom: 0;
 	font-family: $heading-font-family;
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	@media (max-width: 740px) {
+		font-size: 35px;
+	}
 }
 
 h5 {
+	margin-top: 0;
+	margin-bottom: 2px;
 	font-family: $heading-font-family;
 	font-size: 19px;
 	font-weight: 600;
 	letter-spacing: -1px;
+}
+
+h6 {
+	font-family: $heading-font-family;
+	font-size: 16px;
+	font-weight: 600;
+	//letter-spacing: -1px;
+}
+
+a {
+	text-decoration: none;
 }
 
 p {
@@ -38,12 +68,60 @@ p {
 	line-height: 23px;
 }
 
-
 .subheading {
+	margin-top: 8px;
 	margin-bottom: 70px;
 	font-family: $subheading-font-family;
-	font-type: italic;
+	font-style: italic;
 	font-size: 16px;
+
+	@media (min-width: 440px) and (max-width: 767px) {
+		margin-bottom: 9vw;
+	}
+
+	@media (max-width: 439px) {
+		margin-bottom: 14vw;
+	}
+
+}
+
+button {
+	border: 2px solid $yellow-color;
+	border-radius: 3px;
+	outline: 0;  
+	background-color: $yellow-color;
+	width: 240px;
+	height: 68px;
+
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+
+	transition: all .2s;
+
+	&:link, &:visited {
+		color: white;
+	}
+
+	&:hover, &:active {
+		//background-color: $dark-color;
+		//color: $yellow-color;
+		color: $dark-color;
+		background-color: rgba(254, 209, 54, .7);
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+[class*="section--"] {
+	padding-top: 100px;
+
+	@media (max-width: 740px) {
+		padding-top: 60px;
+	}
 }
 
 .header-section {
@@ -103,49 +181,33 @@ p {
 		color: white;
 		text-align: center;
 
-		h3 {
+		@media (max-width: 767px) {
+			padding-top: 20px;
+		}
+
+		.welcome-text {
 			margin: 0;
 			font-family: $subheading-font-family;
-			font-type: italic;
+			font-style: italic;
 			font-size: 40px;
 			font-weight: 400;
 			text-transform: capitalize;
 			letter-spacing: -1px;
-		}
 
-		
-
-		button {
-			border: 2px solid $yellow-color;
-			border-radius: 3px;
-			outline: 0;  
-			background-color: $yellow-color;
-			width: 240px;
-			height: 65px;
-
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 16px;
-
-			transition: all .2s;
-
-			&:link, &:visited {
-				color: white;
-			}
-
-			&:hover, &:active {
-				//background-color: $dark-color;
-				//color: $yellow-color;
-				color: $dark-color;
-				background-color: rgba(254, 209, 54, .7);
+			@media (max-width: 767px) {
+				font-size: 28px;
 			}
 		}
 	}	
 }
 
 .section--services {
-	padding: 100px 0 80px 0;
+	padding-bottom: 80px;
 	background-color: $background-color;
+
+	@media (max-width: 740px) {
+		padding-bottom: 40px;
+	}
 
 	.services-item {
 		margin-bottom: 30px;
@@ -182,8 +244,12 @@ p {
 }
 
 .section--portfolio {
-	padding: 100px 0;
+	padding-bottom: 100px;
 	background-color: $light-gray-color;
+
+	@media (max-width: 767px) {
+		padding-bottom: 40px;
+	}
 
 	.item-container {
 		background-color: white;	
@@ -331,18 +397,87 @@ p {
 	}*/
 }
 
-@media (max-width: 740px) {
-	.header-section .header-text-container {
-		//padding-top: 120px;
+.section--about {
+	padding-bottom: 80px;
+	background-color: $background-color;
 
-		h3 {
-			font-size: 35px;
+	@media (max-width: 740px) {
+		padding-bottom: 40px;
+	}	
+
+	.image-container {
+    	width: 100%;
+     	padding-top: 100%; /* 1:1 Aspect Ratio */
+     	margin-bottom: 93px;
+    	position: relative; /* If you want text inside of it */
+    	box-shadow: 0 0 0 7px $image-border-color;
+    	border-radius: 50%;    	
+    	background-position: center;
+    	background-size: cover;    	
+
+    	.text {
+    		position: absolute;
+    		top: 12%;
+    		left: 0;
+    		bottom: 12%;
+    		right: 0;
+    	}
+	}
+
+	@include about-section-image(1);
+	@include about-section-image(2);
+	@include about-section-image(3);
+	@include about-section-image(4);
+
+	@media (min-width: 680px) {
+		.line {
+			background-image: url("/images/line.jpg");
+			background-position: center;
+			background-repeat: repeat-y;
+		}
+	}	
+
+	.img-blank {
+		
+		background-image: url("/images/about-blank.png");
+		background-color: $yellow-color;
+		background-position: center;
+		background-repeat: repeat-y;
+		
+		h5 {
+			color: white;
+			font-size: 1.3vw;
+			text-transform: uppercase;
+			line-height: 2.2vw;
+			letter-spacing: 0;
+			text-shadow: 0 1px 1px #febc1d;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.col-outside p {
+			margin-bottom: 50px;
 		}
 
-		h1 {
-			font-size: 65px;
+		.image-container {
+			margin-bottom: 30px;
 		}
 	}
 }
+
+
+.bg {
+	background-color: gray;
+}
+
+.bg2 {
+	background-color: orange;
+}
+
+.bg3 {
+	background-color: yellow;
+}
+
+
 
 

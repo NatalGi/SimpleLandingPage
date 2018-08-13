@@ -2,13 +2,13 @@
 	@for $i from 1 through 12 {
 		.col-#{$prefix}-#{$i} {
 			$width: 100% / 12 * $i;
-			flex: 0 0 $width;
+			width: $width;
 			max-width: $width;
 			float: left;
 			min-height: 1px;
 			/*text-align: center;*/
 			position: relative;
-			@if $i != 1 {
+			@if $i != 1 and $i != 12 {
 				padding-left: 17px;
 			}
 			
@@ -17,4 +17,16 @@
 			}			
 		}
 	}
+}
+
+@mixin about-section-image($number) {
+	.img-#{$number} {
+    	background-image: url('/images/about-' + $number + '.jpg');
+    }
+}
+
+@mixin placeholder-styles {
+	color: $textholder-color;
+	font-weight: 700;
+	text-transform: uppercase;
 }

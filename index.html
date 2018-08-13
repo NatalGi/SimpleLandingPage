@@ -6,10 +6,10 @@
 	<title>Simple Landing Page</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab|Droid+Serif:400italic">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </head>
 <body>
 	<header class="header-section">
@@ -25,7 +25,7 @@
 							<a class="navbar-brand"><img src="//placehold.it/150x30" alt="Logo"></a>
 						</div>
 						
-						<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+						<!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
 							<ul class="nav navbar-nav">
 								<li><a href="#">HOME</a></li>
 								<li><a href="#">SERVICES</a></li>
@@ -33,12 +33,12 @@
 								<li><a href="#">ABOUT</a></li>
 								<li><a href="#">CONTACT</a></li>
 							</ul>
-						</div>
+						</div>-->
 					</div>
 				</nav> 
 
 				<div class="header-text-container">
-					<h3>Welcome to our studio!</h3>
+					<h3 class="welcome-text">Welcome to our studio!</h3>
 					<h1>It's nice to meet you</h1>
 					<button>tell me more</button>
 				</div>
@@ -54,21 +54,21 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="services-item col-xl-4 col-md-4">
+				<div class="services-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
 					<a href="#" class="icon-container">
 						<i class="fas fa-shopping-basket"></i>
 					</a>
 					<h5>E-commerce</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus.</p>
 				</div>
-				<div class="services-item col-xl-4 col-md-4">
+				<div class="services-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
 					<a href="#" class="icon-container">
 						<i class="fas fa-laptop"></i>
 					</a>
 					<h5>Responsive Web</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus.</p>
 				</div>
-				<div class="services-item col-xl-4 col-md-4">
+				<div class="services-item col-sm-12 col-md-4 col-lg-4 col-xl-4">
 					<a href="#" class="icon-container">
 						<i class="fas fa-lock"></i>
 					</a>
@@ -88,7 +88,7 @@
 				</div>				
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -101,7 +101,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -114,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -127,7 +127,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -140,7 +140,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -153,7 +153,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="item-container">
 						<a href="#">
 							<div class="photo-container">
@@ -169,6 +169,67 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="section--about">
+		<div class="mid-container">
+			<div class="row header">
+				<h3>About us</h3>
+				<p class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="flex-row">
+				<div class="col-outside align-lg-right align-md-left align-sm-center first-col">
+					<h5 class="uppercase">July 2010</h5>
+					<h5>Our Humble Beginnings</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus. Integer dignissim nibh sit amet metus sodales, quis imperdiet urna semper. Morbi varius tellus erat, eu blandit est porttitor a.</p>
+				</div>
+				<div class="col-inside line second-col">
+					<div class="image-container img-1"></div>
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="col-inside col-in-offset line second-col">
+					<div class="image-container img-2"></div>
+				</div>
+				<div class="col-outside align-lg-left align-md-left align-sm-center third-col">
+					<h5 class="uppercase">January 2011</h5>
+					<h5>Facing Startup Battles</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus. Integer dignissim nibh sit amet metus sodales, quis imperdiet urna semper. Morbi varius tellus erat, eu blandit est porttitor a.</p>
+				</div>				
+			</div>
+
+			<div class="flex-row">
+				<div class="col-outside align-lg-right align-md-left align-sm-center first-col">
+					<h5 class="uppercase">December 2012</h5>
+					<h5>Enter The Dark Days</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus. Integer dignissim nibh sit amet metus sodales, quis imperdiet urna semper. Morbi varius tellus erat, eu blandit est porttitor a.</p>
+				</div>
+				<div class="col-inside line second-col">
+					<div class="image-container img-3"></div>
+				</div>
+			</div>
+
+			<div class="flex-row">
+				<div class="col-inside col-in-offset line second-col">
+					<div class="image-container img-4"></div>
+				</div>
+				<div class="col-outside align-lg-left align-md-left align-sm-center third-col">
+					<h5 class="uppercase">February 2014</h5>
+					<h5>Our Triumph</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam magna mollis placerat maximus. Integer dignissim nibh sit amet metus sodales, quis imperdiet urna semper. Morbi varius tellus erat, eu blandit est porttitor a.</p>
+				</div>				
+			</div>
+
+			<div class="flex-row">
+				<div class="col-inside col-in-offset">
+					<div class="image-container img-blank">
+						<!--<div class="text"><h5>Our<br>story<br>continues<br>...</h5></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 </body>
 </html>
