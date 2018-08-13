@@ -1144,6 +1144,80 @@ button:hover, button:active {
   }
 }
 
+.section--team {
+  padding-bottom: 120px;
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 740px) {
+  .section--team {
+    padding-bottom: 80px;
+  }
+}
+
+.section--team .left-col-padd {
+  padding-left: 6vw;
+}
+
+.section--team .right-col-padd {
+  padding-right: 6vw;
+}
+
+.section--team img {
+  width: 16vw;
+  height: 16vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.section--team h6 {
+  margin-top: 18px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+}
+
+.section--team .profession {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section--team a i {
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  border-radius: 50%;
+  border: 3px solid #222222;
+  color: #222222;
+  font-size: 20px;
+}
+
+.section--team a i:hover, .section--team a i:active {
+  background-color: #222222;
+  color: white;
+}
+
+.section--team .lg-paragraph {
+  margin-top: 50px;
+  padding: 0 60px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 767px) {
+  .section--team img {
+    width: 28vw;
+    height: 28vw;
+  }
+  .section--team .icon-container {
+    margin-bottom: 50px;
+  }
+  .section--team .lg-paragraph {
+    padding: 0;
+  }
+}
+
 .bg {
   background-color: gray;
 }
