@@ -10,28 +10,26 @@
   	padding-left: 15px
 }
 
-.contener-fluid {
-	width: 100%;
-	padding-right: 15px;
-  	padding-left: 15px
-}
-
 .mid-container {
 	width: 72%;
 	margin: 0 auto;
 
-	/*@media (max-width: 740px) {
-		width: 85%;
-	}*/
+	@media (max-width: 740px) {
+		width: 82%;
+	}
 }
 
 .small-container {
 	width: 62%;
 	margin: 0 auto;
 
-	/*@media (max-width: 740px) {
-		width: 5%;
-	}*/
+	@media (min-width: 741px) and (max-width: 950px) {
+		width: 72%;
+	}
+
+	@media (max-width: 740px) {
+		width: 82%;
+	}
 }
 
 .row {
@@ -57,14 +55,12 @@
 }
 
 .col-outside {	
-	//width: 41%;
 	float: left;
 	min-height: 1px;
 	padding: 0 48px;
 }
 
 .col-inside {
-	//width: 18%;
 	float: left;
 	min-height: 1px;
 }
@@ -76,6 +72,7 @@
 @media (max-width: 679px) {
 	.small-container {
 		width: 72%;
+		margin: 0 auto;
 	}
 	.flex-row {
 		flex-direction: column;
@@ -112,6 +109,7 @@
 @media (min-width: 680px) and (max-width: 991px) {
 	.col-outside {
 		width: 75%;
+		padding-right: 0;
 	}
 
 	.col-inside {
@@ -158,7 +156,11 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 380px) {
+	@include grid('xs');
+}
+
+@media (min-width: 381px) and (max-width: 767px) {
 	@include grid('sm');
 }
 

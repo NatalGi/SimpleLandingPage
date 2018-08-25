@@ -52,8 +52,8 @@
 
 			.toggle-btn {
 				display: none;
-				color: #999999;
-				border-color: #999999;
+				color: $toggle-btn-color;
+				border-color: $toggle-btn-color;
 				font-size: 26px;
 				height: 42px;
 				width: 42px;
@@ -65,8 +65,8 @@
 				}
 
 				&:visited, &:link {
-					border-color: #999999;
-					color: #999999;
+					border-color: $toggle-btn-color;
+					color: $toggle-btn-color;
 				}
 			}
 		}
@@ -81,22 +81,37 @@
 			}
 		}
 
+		@media (max-width: 740px) {
+			.nav {
+				ul {
+					left: 9%;
+					right: 9%;
+					width: 82%;
+				}
+			}
+		}
+
+		@media (min-width: 741px) and (max-width: 769px) {
+			.nav {
+				ul {
+					left: 14%;
+					right: 14%;
+					width: 72%;
+				}
+			}
+		}
+
 		@media (max-width: 770px) {
 			.navbar {
 				justify-content: flex-start;
 			}
 			.nav {
 				ul {
-					//display: none;
 					position: absolute;									
-					top: 60px;
-					left: 14%;
-					right: 14%;
-					width: 72%;
+					top: 60px;					
 					text-align: center;
 					transform-origin: top;
 					transform: scaleY(0);
-					//transition: transform .5s;
 
 					&.transition {
 						transition: transform .5s;
@@ -104,14 +119,12 @@
 
 					&.expand {
 						transform: scaleY(1);
-					}
-
-				
+					}				
 
 					li {
 						display: block;
 						margin-bottom: 1px;
-						background-color: rgba(254, 209, 54, .8);	
+						background-color: rgba(254, 209, 54, .9);	
 						height: 40px;
 						line-height: 40px;
 						cursor: pointer;
@@ -130,7 +143,7 @@
 
 						&:hover, &:active {
 							color: white;
-							background-color: rgba(255, 231, 153, .8);
+							background-color: rgba(255, 231, 153, .9);
 						}						
 					}
 				}

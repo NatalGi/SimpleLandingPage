@@ -17,12 +17,22 @@
 					height: 21vw;
 					object-fit: cover;
 
-					@media (max-width: 600px) {
-						height: 28vw;
+					@media (max-width: 380px) {
+						height: 37vw;
+
+						img {
+							&.img-pos-correction {
+								object-position: 0 -85px;
+							}
+						}
 					}					
 
-					@media (min-width: 601px) {
-						height: 32vw;
+					@media (min-width: 381px) {
+						height: 37vw;
+					}
+
+					@media (min-width: 740px) {
+						height: 34vw;
 					}
 
 					@media (min-width: 992px) {

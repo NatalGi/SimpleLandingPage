@@ -8,15 +8,15 @@ footer {
 		i {
 			height: 41px;
 			width: 41px;
-			border: 3px solid #222222;
+			border: 3px solid $footer-dark-gray;
 			border-radius: 50%;
 			color: white;
-			background-color: #222222;
+			background-color: $footer-dark-gray;
 			font-size: 18px;
 
 			&:hover, &:active {
 				background-color: white;
-				color: #222222;	
+				color: $footer-dark-gray;	
 			}
 		}	
 	}
@@ -43,6 +43,10 @@ footer {
 		.text-item {
 			justify-content: center;
 			padding-bottom: 15px;
+		}
+
+		.icon {
+			padding-bottom: 10px;
 		}
 	}
 }

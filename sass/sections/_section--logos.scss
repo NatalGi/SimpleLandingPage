@@ -2,21 +2,13 @@
 	padding: 70px 0;
 	background-color: white;
 
-	.flex-row {
-		align-content: center;
-		justify-content: center;
-
-	}
-
 	.logo-item {
 		display: flex;
 		justify-content: center;
 		padding: 15px 30px;
-
 	}
 
 	img {
-		//padding: 15px 30px;
 		object-fit: contain;
 		width: 100%;
 	}
