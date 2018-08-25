@@ -21,7 +21,7 @@
 
 @mixin about-section-image($number) {
 	.img-#{$number} {
-    	background-image: url('/images/about-' + $number + '.jpg');
+    	background-image: url('../images/about-' + $number + '.jpg');
     }
 }
 

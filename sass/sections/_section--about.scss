@@ -1,0 +1,67 @@
+.section--about {
+	padding-bottom: 80px;
+	background-color: $background-color;
+
+	@media (max-width: 740px) {
+		padding-bottom: 40px;
+	}	
+
+	.image-container {
+    	width: 100%;
+     	padding-top: 100%; /* 1:1 Aspect Ratio */
+     	margin-bottom: 93px;
+    	position: relative; /* If you want text inside of it */
+    	box-shadow: 0 0 0 7px $image-border-color;
+    	border-radius: 50%;    	
+    	background-position: center;
+    	background-size: cover;    	
+
+    	.text {
+    		position: absolute;
+    		top: 12%;
+    		left: 0;
+    		bottom: 12%;
+    		right: 0;
+    	}
+	}
+
+	@include about-section-image(1);
+	@include about-section-image(2);
+	@include about-section-image(3);
+	@include about-section-image(4);
+
+	@media (min-width: 680px) {
+		.line {
+			background-image: url("../images/line.jpg");
+			background-position: center;
+			background-repeat: repeat-y;
+		}
+	}	
+
+	.img-blank {
+		
+		background-image: url("../images/about-blank.png");
+		background-color: $yellow-color;
+		background-position: center;
+		background-repeat: repeat-y;
+		
+		h5 {
+			color: white;
+			font-size: 1.3vw;
+			text-transform: uppercase;
+			line-height: 2.2vw;
+			letter-spacing: 0;
+			text-shadow: 0 1px 1px #febc1d;
+		}
+	}
+
+	@media (max-width: 991px) {
+		.col-outside p {
+			margin-bottom: 50px;
+		}
+
+		.image-container {
+			margin-bottom: 30px;
+		}
+	}
+}
